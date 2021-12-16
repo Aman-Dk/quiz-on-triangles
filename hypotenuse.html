@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>QuizOnTriangles|calculate hypotenuse</title>
 </head>
-<body>
-    
+
+<body class="otherPage">
+    <nav class="navigation container">
+        <div class="nav-brand">Quiz On Triangles 🛆</div>
+        <ul class="nav-links">
+            <li class="list-inline">
+                <a href="/" class="">Quiz</a>
+            </li>
+            <li class="list-inline">
+                <a href="/triangleArea.html" class="">Area of 🛆</a>
+            </li>
+            <li class="list-inline">
+                <a href="/hypotenuse.html" class="link-active">Hypotenuse</a>
+            </li>
+            <li class="list-inline">
+                <a href="/triangleCheck.html" class="">Check for 🛆</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class='header'>
+        <h2>Calculate hypotenuse( √(base² + height² ) )</h2>
+        <hr>
+    </div>
+
+    <h3>Enter base value (a) =</h3>
+    <input type="number" name="base" id="base" required>
+
+    <h3>Enter height value (b) =</h3>
+    <input type="number" name="height" id="height" required>
+
+    <button id="submit">Calculate</button>
+
+    <div class="output"></div>
+
+    <script src="/script/calculateHypotenuse.js"></script>
 </body>
+
 </html>

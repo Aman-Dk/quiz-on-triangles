@@ -1,88 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-:root{
-    --primary-color:#FBBF24;
-    --light-gray:#6B7280;
-    --off-white:#E5E7EB;
-    --white-color:#ffffff;
-    --black-color:#000000;
+:root {
+    --primary-color: #FBBF24;
+    --light-gray: #6B7280;
+    --off-white: #E5E7EB;
+    --white-color: #ffffff;
+    --black-color: #000000;
 }
 
-*{
+* {
     margin: 0;
+    margin-bottom: 1rem;
     padding: auto;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
-hr{
+hr {
     max-width: 800px;
     height: 2px;
     margin: auto;
     background-color: var(--primary-color);
 }
+
 /* navigation */
 
-.navigation{
+.navigation {
     background-color: var(--primary-color);
 }
-.nav-brand{
+
+.nav-brand {
     text-align: left;
     font-size: 2rem;
     padding: 0.5rem 1rem 0rem;
     font-weight: bold;
 }
-.nav-links{
+
+.nav-links {
     text-align: end;
     padding: 0.5rem 1rem 0.5rem 0rem;
     font-size: 18px;
 }
-.nav-links a{
+
+.nav-links a {
     text-decoration: none;
     margin: 0rem 0.5rem;
     color: var(--black-color);
     /* font-weight: lighter; */
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     color: var(--white-color);
 }
 
 /* lists */
 
-.list-inline{
+.list-inline {
     list-style: none;
     display: inline;
 }
 
 /* header */
-.header{
+.header {
     margin: 1rem 0rem 2rem;
     padding: 0rem 1rem;
 }
-.header p{
+
+.header p {
     margin: 1rem 0rem;
     font-weight: bold;
 }
 
 /* container */
-.container-quiz{
+.container-quiz {
     max-width: 600px;
     margin: 1rem auto;
     padding: 0rem 1rem;
 }
 
-.container-quiz p{
+.container-quiz p {
     margin: 1rem 0rem;
 }
 
-.container-quiz h3{
+.container-quiz h3 {
     display: inline;
     margin: 0rem 1rem 0rem 0rem;
 }
 
 /* input */
-input{
+input {
     margin: 0rem 0.5rem;
 }
 
@@ -90,6 +96,7 @@ input{
 button {
     display: block;
     margin: 2rem auto;
+    margin-bottom: auto;
     padding: 0.5rem 2rem;
     background-color: var(--primary-color);
     color: white;
@@ -97,8 +104,29 @@ button {
     border-radius: 0.5rem;
     font-size: large;
     font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
   }
 
-.link-active{
+.link-active {
     font-weight: bold;
+}
+
+/* result */
+.output {
+    font-size: large;
+    font-weight: bold;
+    margin: 1rem auto;
+}
+
+.otherPage input{
+    display: block;
+    margin: 1rem auto;
+    max-width: 250px;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    font-size: large;
 }
